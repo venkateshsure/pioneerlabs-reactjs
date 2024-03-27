@@ -1,5 +1,6 @@
 import {useState,useEffect} from 'react'
 
+import EachCard  from '../EachCard'
 
 import './index.css'
 
@@ -20,16 +21,23 @@ const CryptoCurrency=()=>{
         getData()
     },[])
 
-    console.log(cryptoData)
+    // console.log(cryptoData)
 
     return (
         <div className='crypto-currency'>
             <div className='crypto-currency-con'>
-                <h1 className='crypto-text'>Crypto Currency Prices</h1>
-                <h1 className='crypto-text'>Crypto Currency Prices</h1>
+                <h2 className='crypto-head-text'>Bitcoin Currency Prices</h2>
+                <ul className='crypto-currency-ul-con'>
+                    {
+                        cryptoData.map(each=>(
+                           <EachCard each={each}/>
+                        ))
+                    }
+                </ul>
             </div>
         </div>
     )
 }
 
 export default CryptoCurrency
+

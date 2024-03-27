@@ -60,6 +60,12 @@
 
 }
 
+@media screen and (max-width){
+    .fir-btn-con{
+         display: none;
+    }
+}
+
 .btn{
     color:#ffffff;
     font-family: 'Roboto';

@@ -1,26 +1,25 @@
 
+
 import {Link} from 'react-router-dom'
 import {Component} from 'react'
 
-
-import { CiHome } from "react-icons/ci";
+/* import { CiHome } from "react-icons/ci";
 import { GoOrganization } from "react-icons/go";
 import { GrCube } from "react-icons/gr";
-import { LuArrowUpDown } from "react-icons/lu";
+import { LuArrowUpDown } from "react-icons/lu"; */
 import { RiHistoryFill } from "react-icons/ri";
 import { IoWalletOutline } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiCircleQuestion } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 
-import Search from "../Search";
+// import Search from "../Search";
 import Account from "../Account";
-
-import Header from '../Header';
+// import Header from '../Header';
 
 import './index.css'
 
-class Sidebar extends Component{
+class Navbar extends Component{
 
     state={activeTab:"/"}
 
@@ -30,35 +29,11 @@ class Sidebar extends Component{
 
    render(){ 
     const {activeTab} = this.state
+    console.log(activeTab)
     return (
-        <div className='sidebar'>
+        <div className='navbar'>
             <div className='sidebar-con'>
-                <Header/> <Search/>
                 <div className="first-sidebar-icons-con">
-                    <div className={`sidebar-icons-con ${activeTab === '/' ? 'active' : ''}`}>
-                        <Link to="/" className='nav-link' onClick={() => this.handleTabClick('/')}>
-                            <CiHome className="icons"/>
-                            <span className="text">Home</span>
-                        </Link>
-                    </div>
-                    <div className={`sidebar-icons-con ${activeTab === '/org' ? 'active' : ''}`}>
-                        <Link to="/org" className='nav-link' onClick={() => this.handleTabClick('/org')}>
-                            <GoOrganization className="icons"/>
-                            <span className="text">Organization</span>
-                        </Link>
-                    </div>
-                    <div className={`sidebar-icons-con ${activeTab === '/assets' ? 'active' : ''}`}>
-                        <Link to="/assets" className='nav-link' onClick={() => this.handleTabClick('/assets')}>
-                            <GrCube className="icons"/>
-                            <span className="text">Assets</span>
-                        </Link>
-                    </div>
-                    <div className={`sidebar-icons-con ${activeTab === '/trade' ? 'active' : ''}`}>
-                        <Link to="/trade" className='nav-link' onClick={() => this.handleTabClick('/trade')}>
-                            <LuArrowUpDown className="icons"/>
-                            <span className="text">Trade</span>
-                        </Link>
-                    </div>
                     <div className={`sidebar-icons-con ${activeTab === '/history' ? 'active' : ''}`}>
                         <Link to="/history" className='nav-link' onClick={() => this.handleTabClick('/history')}>
                             <RiHistoryFill className="icons"/>
@@ -92,6 +67,9 @@ class Sidebar extends Component{
                         </Link>
                     </div>
                 </div>
+                <div className='fir-btn-con'>
+                    <button type="button" className='btn'>Start Trading</button>
+                </div>
                 <Account/>
             </div>
         </div>
@@ -99,4 +77,4 @@ class Sidebar extends Component{
 }
 }
 
-export default Sidebar
+export default Navbar

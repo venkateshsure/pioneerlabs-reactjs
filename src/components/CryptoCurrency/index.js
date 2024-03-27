@@ -11,7 +11,7 @@ const CryptoCurrency=()=>{
         const getData=async ()=>{
             const response = await fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
             const data = await response.json()
-            console.log(data)
+           
             const arrayOfObjects = Object.entries(data).map(([key, value]) => ({value }));
             const array = arrayOfObjects[3]
             const arrayValues={...array.value}
@@ -21,8 +21,6 @@ const CryptoCurrency=()=>{
         getData()
     },[])
 
-    // console.log(cryptoData)
-
     return (
         <div className='crypto-currency'>
             <div className='crypto-currency-con'>
@@ -30,7 +28,7 @@ const CryptoCurrency=()=>{
                 <ul className='crypto-currency-ul-con'>
                     {
                         cryptoData.map(each=>(
-                           <EachCard each={each}/>
+                           <EachCard key={each.code} each={each}/>
                         ))
                     }
                 </ul>

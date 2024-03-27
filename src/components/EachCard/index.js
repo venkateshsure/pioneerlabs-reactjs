@@ -2,7 +2,6 @@ import './index.css'
 
 const EachCard = (props)=>{
     const {each}=props
-    console.log(each)
     return (
         <li className='eachcard-con'>
             <p className='eachcard-text'><span className='eachcard-span-ele'>Code: </span>{each.code}</p>

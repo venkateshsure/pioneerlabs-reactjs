@@ -1,6 +1,7 @@
 
 import ChartData from '../ChartData'
 import CryptoCurrency from '../CryptoCurrency'
+import MetaMaskIntegration from '../MetaMaskIntegration'
 
 import './index.css'
 
@@ -19,6 +20,7 @@ const Content=()=>{
             </div>
             <ChartData />
             <CryptoCurrency />
+            <MetaMaskIntegration/>
         </div>
         </div>
     )

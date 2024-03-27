@@ -3,19 +3,13 @@
 import {Link} from 'react-router-dom'
 import {Component} from 'react'
 
-/* import { CiHome } from "react-icons/ci";
-import { GoOrganization } from "react-icons/go";
-import { GrCube } from "react-icons/gr";
-import { LuArrowUpDown } from "react-icons/lu"; */
 import { RiHistoryFill } from "react-icons/ri";
 import { IoWalletOutline } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiCircleQuestion } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
 
-// import Search from "../Search";
 import Account from "../Account";
-// import Header from '../Header';
 
 import './index.css'
 
@@ -29,7 +23,7 @@ class Navbar extends Component{
 
    render(){ 
     const {activeTab} = this.state
-    console.log(activeTab)
+
     return (
         <div className='navbar'>
             <div className='sidebar-con'>

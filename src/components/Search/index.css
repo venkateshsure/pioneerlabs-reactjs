@@ -6,6 +6,12 @@
     padding-left: 10px;
     width:90%;
 }
+@media screen and (min-width:768px){
+    .search{
+        display: none;
+    }
+}
+
 
 .search-con{
     display: flex;

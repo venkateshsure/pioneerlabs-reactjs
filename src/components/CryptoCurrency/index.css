@@ -1,0 +1,24 @@
+.crypto-currency{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    position: static;
+    background-color: #202020f6;
+}
+
+.crypto-currency-con{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.crypto-text{
+    font-size:30px;
+    font-family: 'Roboto';
+    color:#ffffff;
+}

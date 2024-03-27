@@ -1,0 +1,36 @@
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 10px;
+    width:90%;
+}
+
+.search-con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: lightgrey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:30px;
+    width:90%;
+}
+
+.search-icon{
+    color:#ffffff;
+    height:57%;
+    font-weight: bold;
+ }
+ 
+ .search-text{
+     font-size:16px;
+     color: #ffffff;
+     font-family: 'Roboto';
+     margin-left: 10px;
+     font-weight:bold;
+ }

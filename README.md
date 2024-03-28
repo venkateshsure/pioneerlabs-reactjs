@@ -20,21 +20,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
    #### Must Have
 
-        List the critical features or tasks mentioned in the Assignment
+        # Initially,the App start with Home Route Link component and when user click the sidebar Link components the URL in the browser navigates
+         to that respective Link Component.
+        # By using population Data API we display data in Graph here we use the Line Chart with population and year as labels from the data.
+        # And also using cryptocurrency prices API  we display data in cards.
+        # We implemented a feature to connect the MetaMask wallet using Web3 JS when the "Connect Wallet" button is clicked.
+        # From this we get the response as error or success in order to show in the UI.
 
    #### Nice to Have
-
-        List the bonus features or tasks mentioned in the Assignment, if any
-
-### Guidelines to develop a project
-
-   #### Must Have
-
-        List the necessary guidelines to follow while developing the project, mentioned in the Assignment, if any
-
-   #### Nice to Have
-
-        List the additional/suggested guidelines to follow while developing the project, mentioned in the Assignment, if any
+        # We also make the website for both Desktop and mobile devices using "media queries".
+        
 
 ### Submission Instructions
    ### `npm start`

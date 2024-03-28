@@ -66,11 +66,9 @@
     }
 }
 
-@media screen and (max-width: 767px){
-    .header-navbar-con{
-        
-    }
-}
+/* @media screen and (max-width: 767px){
+    .header-navbar-con{}
+} */
 
 .bitcoin-img{
     display: flex;

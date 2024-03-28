@@ -9,6 +9,7 @@ const ChartData = () => {
     const [data,setPopulationData]=useState([])
     useEffect(()=>{
         const getData=async ()=>{
+            // Getting the data from the Population API 
             const response = await fetch('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
             const fetchedData = await response.json()
             const {data}=fetchedData
@@ -18,7 +19,8 @@ const ChartData = () => {
     },[])
 
     return (
-        <ResponsiveContainer width="90%" height="100%">
+        // Line Chart Component
+        <ResponsiveContainer width="90%" height={300}>
             <LineChart width={600} height={300} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="Year" label={{ value: 'Year', position: 'bottom' }} />

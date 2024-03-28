@@ -14,13 +14,13 @@ class MetaMaskIntegration extends Component {
   }
 
   connectWallet = async () => {
-    console.log(window.ethereum)
+    console.log(window.ethereum);
     try {
       if (window.ethereum) {
         await window.ethereum.request({ method: 'eth_requestAccounts' });
         const web3 = new Web3(window.ethereum);
         const accounts = await web3.eth.getAccounts();
-        console.log(accounts[0])
+        console.log(accounts[0]);
         if (accounts.length > 0) {
           this.setState({ isConnected: true, errorMessage: '' });
         }
@@ -28,9 +28,16 @@ class MetaMaskIntegration extends Component {
         this.setState({ isConnected: false, errorMessage: 'MetaMask extension not detected.' });
       }
     } catch (error) {
-      this.setState({ isConnected: false, errorMessage: error.message });
+      if (error.code === 4001) {
+        this.setState({ isConnected: false, errorMessage: 'User denied the request to connect or entered an incorrect password.' });
+      } else {
+        this.setState({ isConnected: false, errorMessage: error.message });
+      }
     }
   };
+  
+
+ 
 
   render() {
     const { isConnected, errorMessage } = this.state;

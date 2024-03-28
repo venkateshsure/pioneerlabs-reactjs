@@ -3,11 +3,15 @@ import { CiSearch } from "react-icons/ci";
 import './index.css'
 
 const Search=()=>{
+
+    const changeInput=e=>{
+        
+    }
     return (
         <div className="search">
             <div className="search-con">
                 <CiSearch className="search-icon"/>
-                <span className="search-text">Search</span>
+                <input type="search" onChange={changeInput} className="search-text" placeholder="search"/>
             </div>
         </div>
     )

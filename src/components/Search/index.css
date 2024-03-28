@@ -6,11 +6,11 @@
     padding-left: 10px;
     width:90%;
 }
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
     .search{
         display: none;
     }
-}
+} */
 
 
 .search-con{
@@ -28,15 +28,18 @@
 }
 
 .search-icon{
-    color:#ffffff;
+    color:black;
     height:57%;
     font-weight: bold;
  }
  
  .search-text{
      font-size:16px;
-     color: #ffffff;
+     color: black;
      font-family: 'Roboto';
      margin-left: 10px;
      font-weight:bold;
+     outline:none;
+     border:none;
+     background: transparent;
  }

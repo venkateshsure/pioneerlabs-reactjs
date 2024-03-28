@@ -33,7 +33,8 @@ class Sidebar extends Component{
     return (
         <div className='sidebar'>
             <div className='sidebar-con'>
-                <Header/> <Search/>
+                <Header/>
+                 <Search/>
                 <div className="first-sidebar-icons-con">
                     <div className={`sidebar-icons-con ${activeTab === '/' ? 'active' : ''}`}>
                         <Link to="/" className='nav-link' onClick={() => this.handleTabClick('/')}>

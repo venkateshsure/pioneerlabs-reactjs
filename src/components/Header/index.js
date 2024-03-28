@@ -14,7 +14,7 @@ const Header=()=>{
    const  hamburgerClicked=()=>{
         setMenu((pre)=>(!pre))
     }
-    console.log(menu)
+    
     return (
         <div className="header">
             <div className="header-con">

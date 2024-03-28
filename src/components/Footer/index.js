@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 class Footer extends Component{
-    state={activeTab:""}
+    state={activeTab:"/"}
 
     handleTabClick = (tabName) => {
         this.setState({ activeTab: tabName });

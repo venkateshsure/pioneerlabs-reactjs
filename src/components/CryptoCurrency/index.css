@@ -6,11 +6,29 @@
     position: static;
 }
 
+@media screen and(max-width:767px){
+    .crypto-currency{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+     }
+}
+
 .crypto-currency-con{
     width:90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media screen and (max-width:767px){
+    .crypto-currency-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+    }
 }
 
 .crypto-head-text{
@@ -26,4 +44,14 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and(max-width: 767px){
+    .crypto-currency-ul-con{
+        width:60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }

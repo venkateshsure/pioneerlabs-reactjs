@@ -2,53 +2,21 @@
 .header{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding-left: 10px;
-    width:90%;
-    height: 8vh;
-    margin-bottom:10px;
-}
-
-
- @media screen and (max-width:767px){
-    .header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 8vh;
-        margin-bottom: 0px;
-    }
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 12vh;
+    background-color: black;
 } 
 
 .header-con-mobile-view{
     display: flex;
-    width:90%;
+    width:40%;
     align-items: center;
     justify-content: space-between;
 }
 
-@media screen and (max-width:767px){
-    .header-con-mobile-view{
-        display: flex;
-        width:60%;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
 
-@media screen and (min-width:768px){
-    .navbar-content-header-con{
-        display: none;
-    }
-}
-
-@media screen and (max-width:767px){
-    .navbar-content-header-con{
-        width:50%;
-    }
-}
 
 .header-con{
     display: flex;
@@ -97,12 +65,48 @@
 
 .hamburger-menu{
     cursor:pointer;
-    color:#ffffff;
+    color: #ffffff;
     position: relative;
+    margin-right:15px;
 }
 
-@media screen and (min-width: 768px){
+ @media screen and (min-width: 768px){
     .hamburger-menu{
         display: none;
     }
 }
+
+/*
+@media screen and (max-width:767px){
+    .header-con-mobile-view{
+        display: flex;
+        width:60%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:767px){
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 8vh;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .navbar-content-header-con{
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navbar-content-header-con{
+        width:50%;
+    }
+}
+*/

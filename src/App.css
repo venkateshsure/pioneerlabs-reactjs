@@ -21,3 +21,43 @@
     min-height:100vh;
   }
 }
+
+
+
+@media screen and (min-width:768px){
+  .app-header-con{
+      display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .app-header-con{
+      display: flex;
+  }
+}
+
+
+@media screen and (min-width:768px){
+  .app-sidebar-con{
+      display: block;
+  }
+}
+
+@media screen and (max-width:767px){
+  .app-sidebar-con{
+      display: none;
+  }
+}
+
+
+@media screen and (min-width:768px){
+  .app-footer-con{
+      display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .app-footer-con{
+      display: block;
+  }
+}

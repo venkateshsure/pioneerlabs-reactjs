@@ -3,8 +3,7 @@ import ChartData from '../ChartData'
 import CryptoCurrency from '../CryptoCurrency'
 import MetaMaskIntegration from '../MetaMaskIntegration'
 
-import Footer from '../Footer'
-import Header from '../Header'
+// import Header from '../Header'
 import Search from '../Search'
 
 import './index.css'
@@ -13,9 +12,6 @@ const Content=()=>{
     return (
         <div className='content'>
         <div className='content-con'>
-            <div className='header-media-queries'>
-                <div className='header-media-queries-con'><Header /></div>
-            </div>
             <div className='fir-content-con'>
                 <div className='fir-content-text-con'>
                     <p className='fir-content-para'>Hello,<span className='fir-content-para-span'>Venkatesh</span> </p>
@@ -31,10 +27,13 @@ const Content=()=>{
             <ChartData />
             <CryptoCurrency />
             <MetaMaskIntegration/>
-            <Footer/>
         </div>
         </div>
     )
 }
 
 export default Content
+
+
+/*   
+*/

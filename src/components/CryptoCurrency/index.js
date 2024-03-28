@@ -9,6 +9,7 @@ const CryptoCurrency=()=>{
 
     useEffect(()=>{
         const getData=async ()=>{
+            // Getting data from cryptocurrency prices API
             const response = await fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
             const data = await response.json()
            
@@ -28,6 +29,7 @@ const CryptoCurrency=()=>{
                 <ul className='crypto-currency-ul-con'>
                     {
                         cryptoData.map(each=>(
+                            // Iteratating over Each object in the cryptoData
                            <EachCard key={each.code} each={each}/>
                         ))
                     }

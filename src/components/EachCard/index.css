@@ -24,6 +24,20 @@
     
 }
 
+@media screen and(max-width:767px){
+    .eachcard-con{   
+         width:40%;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding-left: 15px;
+         margin-bottom:40px;
+         box-shadow: 4px 4px 18px rgba(0, 0, 0, 1.0);
+         animation: beating 0.8s infinite;
+         
+     }
+}
+
 .eachcard-text{
     font-size:22px;
     font-family: 'Roboto';

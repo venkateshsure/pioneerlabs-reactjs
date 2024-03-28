@@ -23,25 +23,28 @@ class Footer extends Component{
             <div className='footer'>
                 <div className='footer-con'>
                     <div className={`footer-icons-con ${activeTab === '/' ? 'footer-active' : ''}`}>
-                        <Link to="/" className='nav-link' onClick={() => this.handleTabClick('/')}>
+                        <Link to="/" className='footer-nav-link' onClick={() => this.handleTabClick('/')}>
                             <CiHome className="icons"/>
                             <span className="text">Home</span>
                         </Link>
                     </div>
                     <div className={`footer-icons-con ${activeTab === '/org' ? 'footer-active' : ''}`}>
-                        <Link to="/org" className='nav-link' onClick={() => this.handleTabClick('/org')}>
+                        <Link to="/org" className='footer-nav-link' onClick={() => this.handleTabClick('/org')}>
                             <GoOrganization className="icons"/>
                             <span className="text">Organization</span>
                         </Link>
                     </div>
+                    <div className='footer-btn-con'>
+                        <button type="button" className='footer-btn'>Start Trading</button>
+                    </div>
                     <div className={`footer-icons-con ${activeTab === '/assets' ? 'footer-active' : ''}`}>
-                        <Link to="/assets" className='nav-link' onClick={() => this.handleTabClick('/assets')}>
+                        <Link to="/assets" className='footer-nav-link' onClick={() => this.handleTabClick('/assets')}>
                             <GrCube className="icons"/>
                             <span className="text">Assets</span>
                         </Link>
                     </div>
                     <div className={`footer-icons-con ${activeTab === '/trade' ? 'footer-active' : ''}`}>
-                        <Link to="/trade" className='nav-link' onClick={() => this.handleTabClick('/trade')}>
+                        <Link to="/trade" className='footer-nav-link' onClick={() => this.handleTabClick('/trade')}>
                             <LuArrowUpDown className="icons"/>
                             <span className="text">Trade</span>
                         </Link>

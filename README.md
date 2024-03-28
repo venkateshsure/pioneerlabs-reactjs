@@ -2,69 +2,93 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Title
 
-In the project directory, you can run:
+    In this project, let's build a "Bitcoin Price Tracker".
 
-### `npm start`
+## Objective
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    The main goal or purpose of the Assignment is to monitoring Bitcoin Prices in Various Currencies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+    List of primary technologies, languages used for the Assignment are React.JS, CSS, Flexbox.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Completion Instructions
 
-### `npm run build`
+### Functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   #### Must Have
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+        List the critical features or tasks mentioned in the Assignment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   #### Nice to Have
 
-### `npm run eject`
+        List the bonus features or tasks mentioned in the Assignment, if any
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Guidelines to develop a project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   #### Must Have
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        List the necessary guidelines to follow while developing the project, mentioned in the Assignment, if any
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   #### Nice to Have
 
-## Learn More
+        List the additional/suggested guidelines to follow while developing the project, mentioned in the Assignment, if any
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Submission Instructions
+   ### `npm start`
+        Runs the app in the development mode.\
+        Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        The page will reload when you make changes.\
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Resources
+    These are React Icons used in our application for displaying the required icons 
+    1.CiHome
+    2.GoOrganization 
+    3.GrCube 
+    4.LuArrowUpDown 
+    5.RiHistoryFill 
+    6.IoWalletOutline ;
+    7.IoIosNotificationsOutline
+    8.CiCircleQuestion 
+    9.CiSettings 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+### Design files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    src/App.js
+    src/components/Account/index.js
+    src/components/Account/index.css
+    src/components/ChartData/index.js
+    src/components/ChartData/index.css
+    src/components/Content/index.js
+    src/components/Content/index.css
+    src/components/CryptoCurrency/index.js
+    src/components/CryptoCurrency/index.css
+    src/components/EachCard/index.js
+    src/components/EachCard/index.css
+    src/components/Footer/index.js
+    src/components/Footer/index.css
+    src/components/Header/index.js
+    src/components/Header/index.css
+    src/components/MetaMaskIntegration/index.js
+    src/components/MetaMaskIntegration/index.css
+    src/components/Navbar/index.js
+    src/components/Navbar/index.css
+    src/components/Search/index.js
+    src/components/Search/index.css
+    src/components/Sidebar/index.js
+    src/components/Sidebar/index.css
 
-### Making a Progressive Web App
+### APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Fetch population data from the provided API and display in graph - https://datausa.io/api/data?drilldowns=Nation&measures=Population.
+    Fetch cryptocurrency prices from the provided API and display them in cards - https://api.coindesk.com/v1/bpi/currentprice.json.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Third-party packages
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3",
+    "recharts": "^2.12.3",
+    "web3": "^4.7.0".

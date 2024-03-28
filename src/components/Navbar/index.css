@@ -1,11 +1,47 @@
 .navbar{
-    display: flex;
     position: absolute;
+   width:40%;
+    top: 30px;
+    left: 200px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
 
+.navbar-con{
+    display: flex;
+    width:80%;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width:768px){
     .navbar{
         display: none;
+    }
+}
+
+.first-navbar-icons-con{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 30vh;
+}
+
+@media screen and (max-width: 767px){
+    .navbar-span-ele{
+        color:#ffffff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .user-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
     }
 }

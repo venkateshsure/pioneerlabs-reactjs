@@ -8,6 +8,7 @@ import { IoWalletOutline } from "react-icons/io5";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiCircleQuestion } from "react-icons/ci";
 import { CiSettings } from "react-icons/ci";
+import { FaRegUserCircle } from "react-icons/fa";
 
 import Account from "../Account";
 
@@ -26,8 +27,12 @@ class Navbar extends Component{
 
     return (
         <div className='navbar'>
-            <div className='sidebar-con'>
-                <div className="first-sidebar-icons-con">
+            <div className='navbar-con'>
+                <div className="first-navbar-icons-con">
+                    <div className="sidebar-icons-con user-icon">
+                        <FaRegUserCircle/>
+                        <span className='navbar-span-ele'>Account</span>
+                    </div>
                     <div className={`sidebar-icons-con ${activeTab === '/history' ? 'active' : ''}`}>
                         <Link to="/history" className='nav-link' onClick={() => this.handleTabClick('/history')}>
                             <RiHistoryFill className="icons"/>
@@ -40,8 +45,6 @@ class Navbar extends Component{
                             <span className="text">Wallet</span>
                         </Link>
                     </div>
-                </div>
-                <div className="second-sidebar-icons-con">
                     <div className={`sidebar-icons-con ${activeTab === '/notifications' ? 'active' : ''}`}>
                         <Link to="/notifications" className='nav-link' onClick={() => this.handleTabClick('/notifications')}>
                             <IoIosNotificationsOutline className="icons"/>
@@ -60,13 +63,10 @@ class Navbar extends Component{
                             <span className="text">Settings</span>
                         </Link>
                     </div>
-                </div>
-                <div className='fir-btn-con'>
-                    <button type="button" className='btn'>Start Trading</button>
-                </div>
                 <Account/>
             </div>
         </div>
+    </div>
     )
 }
 }

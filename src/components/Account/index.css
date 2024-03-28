@@ -33,11 +33,19 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 767px){
+    .account-text-con{
+        color:#ffffff;
+    }
+}
+
 .account-head-text{
     font-family: 'Roboto';
     font-size:15px;
     font-weight: bold;
 }
+
+
 
 .account-para-text{
     font-family: 'Roboto';
@@ -47,4 +55,10 @@
 
 .account-three-dots-con{
     cursor:pointer;
+}
+
+@media screen and (max-width: 767px){
+    .account-three-dots-con{
+        display: none;
+    }
 }

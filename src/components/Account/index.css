@@ -19,6 +19,14 @@
     border-bottom-right-radius: 10px;
 }
 
+@media screen and (max-width:767px){
+    .account-con{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+    }
+}
+
 .account-text-con{
     display:flex;
     flex-direction: column;

@@ -5,6 +5,8 @@ import Navbar from "../Navbar";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import { RxCross2 } from "react-icons/rx";
+
 import './index.css'
 
 const Header=()=>{
@@ -18,7 +20,9 @@ const Header=()=>{
             <div className="header-con">
                 <h1 className="header-para">Carbon Cell</h1>
             </div>
-            <GiHamburgerMenu className="hamburger-menu" onClick={hamburgerClicked}/>
+            { menu? <RxCross2 className="hamburger-menu" onClick={hamburgerClicked}/> :
+             <GiHamburgerMenu className="hamburger-menu" onClick={hamburgerClicked}/>
+            }
             {menu && <Navbar/> }
         </div>
     )
